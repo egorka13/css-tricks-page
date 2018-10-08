@@ -1,0 +1,45 @@
+.content-nav {
+  flex: 0 0 100px;
+  position: relative;
+  /*padding: 1rem 0 0 0;*/
+  text-align: center;
+  background: #111;
+
+  &__list {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__list-item_selected {
+    background: #eee;
+    color: black;
+  }
+
+  &__list-item_selected a>span{
+    color: black;
+  }
+}
+
+.nav-link {
+  display: inline-block;
+  padding: 0.75rem 0.5rem;
+  color: white;
+  font-weight: 500;
+  font-size: 0.66rem;
+  letter-spacing: 0.04rem;
+  text-decoration: none;
+
+  &__icon {
+    fill: none;
+    stroke: white;
+    stroke-width: 2;
+  }
+
+  &__icon_selected {
+    stroke: black;
+  }
+
+  span {
+    display: block;
+  }
+}
