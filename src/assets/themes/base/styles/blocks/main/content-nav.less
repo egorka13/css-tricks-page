@@ -1,45 +1,95 @@
 .content-nav {
   flex: 0 0 100px;
   position: relative;
-  /*padding: 1rem 0 0 0;*/
   text-align: center;
   background: #111;
 
   &__list {
     list-style: none;
     padding: 0;
-  }
 
-  &__list-item_selected {
-    background: #eee;
-    color: black;
-  }
+    &:hover &-item a > svg {
+      transition: 0.2s;
 
-  &__list-item_selected a>span{
-    color: black;
+      &._fill-pink {
+        stroke: pink;
+      }
+
+      &._fill-red {
+        stroke: red;
+      }
+
+      &._fill-purple {
+        stroke: purple;
+      }
+
+      &._fill-blue {
+        stroke: blue;
+      }
+
+      &._fill-green {
+        stroke: green;
+      }
+
+      &._fill-light-green {
+        stroke: #3CBC3C;
+      }
+
+      &._fill-yellow {
+        stroke: #FFFF66;
+      }
+
+      &._fill-steel-blue {
+        stroke: #6495ED;
+      }
+    }
+
+    &:hover &-item a > span {
+      transition: 0.1s;
+      transform: none;
+    }
+
+    &-item_selected {
+      background: #eee;
+      color: black;
+
+      & a > span {
+        color: black;
+      }
+    }
   }
 }
 
 .nav-link {
   display: inline-block;
   padding: 0.75rem 0.5rem;
+
   color: white;
   font-weight: 500;
-  font-size: 0.66rem;
+  font-size: 0.5rem;
   letter-spacing: 0.04rem;
   text-decoration: none;
+
+  transition: 0.3s;
 
   &__icon {
     fill: none;
     stroke: white;
     stroke-width: 2;
-  }
 
-  &__icon_selected {
-    stroke: black;
+    &_selected {
+      fill: none;
+      stroke: black;
+    }
   }
 
   span {
     display: block;
+    transform: translateX(-100px);
+  }
+
+  &:hover {
+    opacity: 0.75;
+    transform: translateY(3px);
   }
 }

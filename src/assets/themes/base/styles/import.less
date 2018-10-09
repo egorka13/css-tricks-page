@@ -15,26 +15,37 @@
 @import "blocks/main/content-sidebar";
 @import "blocks/main/article-card";
 
-//@import "blocks/footer/footer-search-block";
-//@import "blocks/footer/footer-page";
-//@import "blocks/footer/footer-input";
-//@import "blocks/footer/footer-host-block";
-//@import "blocks/footer/footer-menu-block";
+@import "blocks/footer/footer-newsletter";
+@import "blocks/footer/footer-mediatemple";
+@import "blocks/footer/footer-colophon";
+@import "blocks/footer/footer-input";
 
 
 /* Media */
-/*@media (max-width: 980px) {
-  .content-page-nav, .footer-first-block__left,
-  .footer-second-block__left, .footer-third-block__left {
+@media (max-width: 1085px) {
+  .content-nav, .footer-newsletter__left,
+  .footer-mediatemple__left, .footer-colophon__left {
     display: none;
   }
 
-  .content-page__content, .footer-first-block__center,
-  .footer-second-block__center, .footer-third-block__center {
+  .content-main, .footer-colophon__center,
+  .footer-mediatemple__center, .footer-newsletter__center {
     flex: 4.5;
   }
 
-  .content-page__aside {
+  .content-sidebar {
     flex: 1.5;
   }
-}*/
+}
+
+@media (max-width: 940px) {
+  .footer-colophon__right, .footer-mediatemple__right, .footer-newsletter__right {
+    display: none !important;
+  }
+}
+
+@media (max-width: 735px) {
+  .content-sidebar {
+    display: none;
+  }
+}
