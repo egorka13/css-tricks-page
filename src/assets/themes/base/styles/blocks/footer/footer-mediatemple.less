@@ -1,0 +1,43 @@
+.footer-mediatemple {
+  display: flex;
+
+  &__left {
+    flex: 0 0 100px;
+    background: #111;
+  }
+
+  &__center {
+    flex: 1;
+    padding: 2rem;
+    background: black;
+
+    &-img {
+      display: flex;
+      justify-content: flex-end;
+
+      & img {
+        height: 40px;
+      }
+    }
+  }
+
+  &__right {
+    flex: 0 0 calc(300px + 2rem);
+
+    font-size: 0.8rem;
+    background: #252525;
+
+    &-link {
+      display: block;
+      padding: 2rem;
+
+      text-decoration: none;
+      font-size: 0.8rem;
+      color: #b4b4b4;
+
+      & strong {
+        color: #ff9800;
+      }
+    }
+  }
+}

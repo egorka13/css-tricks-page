@@ -1,0 +1,33 @@
+.footer-newsletter {
+  display: flex;
+
+  &__left {
+    flex: 0 0 100px;
+    background: #282828;
+  }
+
+  &__center {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    align-items: center;
+    padding: 2rem 0 2rem 2rem;
+
+    background: #363636;
+
+    &-img img {
+      width: 300px;
+      margin-right: 1rem;
+    }
+  }
+
+  &__right {
+    flex: 0 0 calc(300px + 2rem);
+    font-size: 0.8rem;
+    background: #a8a8a8;
+
+    &-text {
+      margin: 2rem;
+    }
+  }
+}
