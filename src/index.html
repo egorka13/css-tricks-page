@@ -12,6 +12,17 @@
 
 <div class="layout">
     <header class="layout__header">
+        <div class="menu-toggle-area">
+            <button id="menu_button" class="menu-toggle-area__button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="menu-toggle-area__button-icon" viewBox="0 0 100 68.42"
+                     width="26px" height="26px">
+                    <title>icon-menu</title>
+                    <path d="M94.73 10.53H5.27c-7 0-7-10.53 0-10.53h89.46c6.88.14 6.88 10.38 0 10.53zm0 18.42H5.27c-7 0-7
+                     10.53 0 10.53h89.46c6.86-.17 6.86-10.38 0-10.53zm0 28.94H5.27c-7 0-7 10.53 0 10.53h89.46c7.03 0 7.03-10.53
+                      0-10.53z" data-name="Layer 1"></path>
+                </svg>
+            </button>
+        </div>
         <div class="logo">
             <a href="#" class="logo__link">
                 <svg xmlns="http://www.w3.org/2000/svg" class="logo__icon" viewBox="0 0 362.62 388.52" width="35px"
@@ -80,7 +91,7 @@
         </div>
     </header>
     <main class="layout__main">
-        <nav class="content-nav">
+        <nav id="navigation" class="content-nav">
             <ul class="content-nav__list">
                 <li class="content-nav__list-item content-nav__list-item_selected">
                     <a href="#" class="nav-link">
@@ -181,125 +192,133 @@
                 </li>
             </ul>
         </nav>
-        <section class="content-main">
-            <article class="article-card">
-                <a href="#" class="article-card__link">
-                    <img src="assets/themes/base/img/three-borders.png" alt="three-borders"
-                         class="article-card__link-image">
-                </a>
-                <h1 class="article-card__header">
-                    <a class="article-card__header-link" href="#">How Do You Put a Border on Three Sides of an
-                        Element?</a>
-                </h1>
-                <div class="article-card__author">
-                    <a href="#" class="article-card__author-hashtag">#</a>
-                    OCTOBER 3, 2018 BY
-                    <a href="#" class="article-card__author-link">CHRIS COYIER</a>
-                </div>
-                <div class="article-card__text">
-                    <p class="article-card__text-item">
-                        I saw a little conversation about this the other day and figured it would be fun to look at all
-                        the different ways to do it. None of them are particularly tricky, but perhaps you'll favor one
-                        over another for clarity of syntax, efficiency, or otherwise.
-                    </p>
-                    <a href="#" class="article-card__text-more">(more…)</a>
-                </div>
-                <div class="article-card__keywords">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="article-card__keywords-icon" viewBox="0 0 100 99.98"
-                         width="12px" height="12px">
-                        <title>icon-tag</title>
-                        <path d="M42 42a10.07 10.07 0 1 1 0-14.24A10 10 0 0 1 42 42zm56 6.5l-43.74-44a7.19 7.19 0 0
+        <div class="layout__main-wrapper">
+            <section class="content-main">
+                <article class="article-card">
+                    <a href="#" class="article-card__link">
+                        <img src="assets/themes/base/img/three-borders.png" alt="three-borders"
+                             class="article-card__link-image">
+                    </a>
+                    <h1 class="article-card__header">
+                        <a class="article-card__header-link" href="#">How Do You Put a Border on Three Sides of an
+                            Element?</a>
+                    </h1>
+                    <div class="article-card__author">
+                        <a href="#" class="article-card__author-hashtag">#</a>
+                        OCTOBER 3, 2018 BY
+                        <a href="#" class="article-card__author-link">CHRIS COYIER</a>
+                    </div>
+                    <div class="article-card__text">
+                        <p class="article-card__text-item">
+                            I saw a little conversation about this the other day and figured it would be fun to look at
+                            all
+                            the different ways to do it. None of them are particularly tricky, but perhaps you'll favor
+                            one
+                            over another for clarity of syntax, efficiency, or otherwise.
+                        </p>
+                        <a href="#" class="article-card__text-more">(more…)</a>
+                    </div>
+                    <div class="article-card__keywords">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="article-card__keywords-icon"
+                             viewBox="0 0 100 99.98"
+                             width="12px" height="12px">
+                            <title>icon-tag</title>
+                            <path d="M42 42a10.07 10.07 0 1 1 0-14.24A10 10 0 0 1 42 42zm56 6.5l-43.74-44a7.19 7.19 0 0
                         0-5-2.25L8 0a7.55 7.55 0 0 0-8 7v1l2.5 41a7.11 7.11 0 0 0 2.25 4.75l43.49 44a7.2 7.2 0 0 0
                         5.24 2.25 6.81 6.81 0 0 0 5.25-2.25L97.72 59A7.47 7.47 0 0 0 98 48.5z"></path>
-                    </svg>
-                    <a href="#" class="article-card__keywords-item">BORDER</a>
-                </div>
-            </article>
-            <article class="article-card">
-                <a href="#" class="article-card__link">
-                    <img src="assets/themes/base/img/background-filter.png" alt="background-filter"
-                         class="article-card__link-image">
-                </a>
-                <h1 class="article-card__header">
-                    <a class="article-card__header-link" href="#">Apply a Filter to a Background Image</a>
-                </h1>
-                <div class="article-card__author">
-                    <a href="#" class="article-card__author-hashtag">#</a>
-                    OCTOBER 2, 2018 BY
-                    <a href="#" class="article-card__author-link">CHRIS COYIER</a>
-                </div>
-                <div class="article-card__text">
-                    <p class="article-card__text-item">
-                        You can apply a filter to an entire element quite easily with the filter property.
-                        But what if you want to apply a filter just to the background of an element?
-                        It's weirdly tricky.
-                    </p>
-                    <p class="article-card__text-item">
-                        There are CSS properties that specific to backgrounds, like background-blend-mode
-                        — but blending and filters are not the same thing. It sorta seems to be the reason
-                        we have backdrop-filter, but not quite. That does filtering as the background interacts
-                        with what is behind the element.
-                    </p>
-                    <p class="article-card__text-item">
-                        There is no background-filter, unfortunately. What are we to do?
-                    </p>
-                    <a href="#" class="article-card__text-more">(more…)</a>
-                </div>
-                <div class="article-card__keywords">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="article-card__keywords-icon" viewBox="0 0 100 99.98"
-                         width="12px" height="12px">
-                        <title>icon-tag</title>
-                        <path d="M42 42a10.07 10.07 0 1 1 0-14.24A10 10 0 0 1 42 42zm56 6.5l-43.74-44a7.19 7.19 0 0
+                        </svg>
+                        <a href="#" class="article-card__keywords-item">BORDER</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <a href="#" class="article-card__link">
+                        <img src="assets/themes/base/img/background-filter.png" alt="background-filter"
+                             class="article-card__link-image">
+                    </a>
+                    <h1 class="article-card__header">
+                        <a class="article-card__header-link" href="#">Apply a Filter to a Background Image</a>
+                    </h1>
+                    <div class="article-card__author">
+                        <a href="#" class="article-card__author-hashtag">#</a>
+                        OCTOBER 2, 2018 BY
+                        <a href="#" class="article-card__author-link">CHRIS COYIER</a>
+                    </div>
+                    <div class="article-card__text">
+                        <p class="article-card__text-item">
+                            You can apply a filter to an entire element quite easily with the filter property.
+                            But what if you want to apply a filter just to the background of an element?
+                            It's weirdly tricky.
+                        </p>
+                        <p class="article-card__text-item">
+                            There are CSS properties that specific to backgrounds, like background-blend-mode
+                            — but blending and filters are not the same thing. It sorta seems to be the reason
+                            we have backdrop-filter, but not quite. That does filtering as the background interacts
+                            with what is behind the element.
+                        </p>
+                        <p class="article-card__text-item">
+                            There is no background-filter, unfortunately. What are we to do?
+                        </p>
+                        <a href="#" class="article-card__text-more">(more…)</a>
+                    </div>
+                    <div class="article-card__keywords">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="article-card__keywords-icon"
+                             viewBox="0 0 100 99.98"
+                             width="12px" height="12px">
+                            <title>icon-tag</title>
+                            <path d="M42 42a10.07 10.07 0 1 1 0-14.24A10 10 0 0 1 42 42zm56 6.5l-43.74-44a7.19 7.19 0 0
                         0-5-2.25L8 0a7.55 7.55 0 0 0-8 7v1l2.5 41a7.11 7.11 0 0 0 2.25 4.75l43.49 44a7.2 7.2 0 0 0
                         5.24 2.25 6.81 6.81 0 0 0 5.25-2.25L97.72 59A7.47 7.47 0 0 0 98 48.5z"></path>
-                    </svg>
-                    <a href="#" class="article-card__keywords-item">BACKDROP-FILTER BACKGROUND-BLEND-MODE FILTERS
-                        GRAYSCALE</a>
-                </div>
-            </article>
-            <article class="article-card">
-                <a href="#" class="article-card__link">
-                    <img src="assets/themes/base/img/css-shapes.jpg" alt="css-shapes" class="article-card__link-image">
-                </a>
-                <h1 class="article-card__header">
-                    <a class="article-card__header-link" href="#">The Shapes of CSS</a>
-                </h1>
-                <div class="article-card__author">
-                    <a href="#" class="article-card__author-hashtag">#</a>
-                    OCTOBER 1, 2018 BY
-                    <a href="#" class="article-card__author-link">CHRIS COYIER</a>
-                </div>
-                <div class="article-card__text">
-                    <p class="article-card__text-item">
-                        CSS is capable of making all sorts of shapes. Squares and rectangles are easy,
-                        as they are the natural shapes of the web. Add a width and height and you have
-                        the exact size rectangle you need. Add border-radius and you can round that
-                        shape, and enough of it you can turn those rectangles into circles and ovals.
-                    </p>
-                    <p class="article-card__text-item">
-                        We also get the ::before and ::after psuedo elements in CSS, which give us the
-                        potential of two more shapes we can add to the original element. By getting
-                        clever with positioning, transforming, and many other tricks, we can make lots
-                        of shapes in CSS with only a single HTML element.
-                    </p>
-                    <a href="#" class="article-card__text-more">(more…)</a>
-                </div>
-                <div class="article-card__keywords">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="article-card__keywords-icon" viewBox="0 0 100 99.98"
-                         width="12px" height="12px">
-                        <title>icon-tag</title>
-                        <path d="M42 42a10.07 10.07 0 1 1 0-14.24A10 10 0 0 1 42 42zm56 6.5l-43.74-44a7.19 7.19 0 0
+                        </svg>
+                        <a href="#" class="article-card__keywords-item">BACKDROP-FILTER BACKGROUND-BLEND-MODE FILTERS
+                            GRAYSCALE</a>
+                    </div>
+                </article>
+                <article class="article-card">
+                    <a href="#" class="article-card__link">
+                        <img src="assets/themes/base/img/css-shapes.jpg" alt="css-shapes"
+                             class="article-card__link-image">
+                    </a>
+                    <h1 class="article-card__header">
+                        <a class="article-card__header-link" href="#">The Shapes of CSS</a>
+                    </h1>
+                    <div class="article-card__author">
+                        <a href="#" class="article-card__author-hashtag">#</a>
+                        OCTOBER 1, 2018 BY
+                        <a href="#" class="article-card__author-link">CHRIS COYIER</a>
+                    </div>
+                    <div class="article-card__text">
+                        <p class="article-card__text-item">
+                            CSS is capable of making all sorts of shapes. Squares and rectangles are easy,
+                            as they are the natural shapes of the web. Add a width and height and you have
+                            the exact size rectangle you need. Add border-radius and you can round that
+                            shape, and enough of it you can turn those rectangles into circles and ovals.
+                        </p>
+                        <p class="article-card__text-item">
+                            We also get the ::before and ::after psuedo elements in CSS, which give us the
+                            potential of two more shapes we can add to the original element. By getting
+                            clever with positioning, transforming, and many other tricks, we can make lots
+                            of shapes in CSS with only a single HTML element.
+                        </p>
+                        <a href="#" class="article-card__text-more">(more…)</a>
+                    </div>
+                    <div class="article-card__keywords">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="article-card__keywords-icon"
+                             viewBox="0 0 100 99.98"
+                             width="12px" height="12px">
+                            <title>icon-tag</title>
+                            <path d="M42 42a10.07 10.07 0 1 1 0-14.24A10 10 0 0 1 42 42zm56 6.5l-43.74-44a7.19 7.19 0 0
                         0-5-2.25L8 0a7.55 7.55 0 0 0-8 7v1l2.5 41a7.11 7.11 0 0 0 2.25 4.75l43.49 44a7.2 7.2 0 0 0
                         5.24 2.25 6.81 6.81 0 0 0 5.25-2.25L97.72 59A7.47 7.47 0 0 0 98 48.5z"></path>
-                    </svg>
-                    <a href="#" class="article-card__keywords-item">SHAPES</a>
+                        </svg>
+                        <a href="#" class="article-card__keywords-item">SHAPES</a>
+                    </div>
+                </article>
+                <div class="content-main__more">
+                    <button type="button" class="content-main__more-button">← OLDER STUFF</button>
                 </div>
-            </article>
-            <div class="content-main__more">
-                <button type="button" class="content-main__more-button">← OLDER STUFF</button>
-            </div>
-        </section>
-        <aside class="content-sidebar"></aside>
+            </section>
+            <aside class="content-sidebar"></aside>
+        </div>
     </main>
     <footer class="layout__footer">
         <section class="footer-newsletter">
@@ -393,6 +412,18 @@
         </section>
     </footer>
 </div>
+
+<script>
+    document.getElementById("menu_button").onclick = function myFunction() {
+        var x = document.getElementById("navigation");
+
+        if (x.className === "content-nav") {
+            x.className += " open";
+        } else {
+            x.className = "content-nav";
+        }
+    };
+</script>
 
 </body>
 </html>

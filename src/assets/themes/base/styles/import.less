@@ -2,50 +2,115 @@
 @import "common/colors";
 @import "common/common";
 @import "common/normalize";
-
 /* Blocks */
 @import "blocks/layout";
-
+@import "blocks/header/menu-toggle-area";
 @import "blocks/header/logo";
 @import "blocks/header/middle-area";
 @import "blocks/header/search";
-
 @import "blocks/main/content-nav";
 @import "blocks/main/content-main";
 @import "blocks/main/content-sidebar";
 @import "blocks/main/article-card";
-
 @import "blocks/footer/footer-newsletter";
 @import "blocks/footer/footer-mediatemple";
 @import "blocks/footer/footer-colophon";
 @import "blocks/footer/footer-input";
 
-
 /* Media */
 @media (max-width: 1085px) {
+  .layout__header {
+    & .menu-toggle-area {
+      display: block;
+      margin-right: 10px;
+      padding: 0 1rem;
+    }
+
+    & .logo {
+      flex-basis: auto;
+      margin-right: 20px;
+    }
+
+    & .middle-area {
+      &__icon {
+        width: 190px;
+        height: 24px;
+      }
+    }
+  }
+
+  .layout__main {
+    flex-wrap: wrap;
+  }
+
   .content-nav, .footer-newsletter__left,
-  .footer-mediatemple__left, .footer-colophon__left {
+  .footer-mediatemple__left, .footer-colophon__left, .footer-colophon__right,
+  .footer-mediatemple__right, .footer-newsletter__right, .content-sidebar {
     display: none;
   }
 
-  .content-main, .footer-colophon__center,
-  .footer-mediatemple__center, .footer-newsletter__center {
-    flex: 4.5;
-  }
+  .content-nav {
+    &.open {
+      display: flex;
+      flex-basis: 100%;
+    }
 
-  .content-sidebar {
-    flex: 1.5;
+    &__list {
+      display: flex;
+      flex-basis: 100%;
+
+      &-item {
+        flex: 1;
+
+        & a > span {
+          font-size: 0.7rem;
+          font-weight: 700;
+          transform: none;
+        }
+      }
+    }
   }
 }
 
-@media (max-width: 940px) {
-  .footer-colophon__right, .footer-mediatemple__right, .footer-newsletter__right {
-    display: none !important;
+@media (max-width: 850px) {
+  .layout__header {
+    padding: 0.5rem;
+
+    & .menu-toggle-area {
+      padding: 0;
+      margin-left: 0;
+      margin-right: 1rem;
+    }
+
+    & .search {
+      display: flex;
+      flex-basis: 0;
+      justify-content: flex-end;
+
+      &__input {
+        display: none;
+      }
+    }
+  }
+
+  .content-nav {
+    &__list {
+      flex-wrap: wrap;
+
+      &-item {
+        flex-basis: 33.3333%;
+      }
+    }
   }
 }
 
-@media (max-width: 735px) {
-  .content-sidebar {
-    display: none;
+@media (max-width: 585px) {
+  .footer-colophon__center-bottom {
+    display: block;
+
+    &-link {
+      display: block;
+      font-size: 1rem;
+    }
   }
 }
