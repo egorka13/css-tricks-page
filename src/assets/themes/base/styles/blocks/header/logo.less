@@ -1,8 +1,14 @@
 .logo {
-  flex: 0 0 100px;
+  flex-basis: 100px;
+  padding-top: 5px;
   text-align: center;
 
   &__icon {
     fill: #ccc;
+  }
+
+  @media (max-width: 1085px) {
+    flex-basis: auto;
+    margin-right: 20px;
   }
 }

@@ -1,5 +1,5 @@
 .search {
-  flex: 0 0 calc(300px + 2rem);
+  display: flex;
 
   &__input {
     padding: 8px;
@@ -19,5 +19,14 @@
     vertical-align: middle;
     padding: 5px 0;
     fill: white;
+  }
+
+  @media (max-width: 850px) {
+    flex-basis: 0;
+    justify-content: flex-end;
+
+    &__input {
+      display: none;
+    }
   }
 }

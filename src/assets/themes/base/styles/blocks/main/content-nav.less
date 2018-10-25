@@ -1,5 +1,4 @@
 .content-nav {
-  flex: 0 0 100px;
   position: relative;
   text-align: center;
   background: #111;
@@ -55,6 +54,35 @@
 
       & a > span {
         color: black;
+      }
+    }
+  }
+
+  @media (max-width: 1085px) {
+    display: none;
+
+    &__list {
+      display: flex;
+      flex-basis: 100%;
+
+      &-item {
+        flex: 1;
+
+        & a > span {
+          font-size: 0.7rem;
+          font-weight: 700;
+          transform: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 850px) {
+    &__list {
+      flex-wrap: wrap;
+
+      &-item {
+        flex-basis: 33.3333%;
       }
     }
   }
